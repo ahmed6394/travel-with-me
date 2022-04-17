@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "SMALL GROUP TOUR",
+    "price": "3500",
+    "description": "Take the path less traveled with Collettes Small Group Explorations tours. Delve into immersive experiences. Settle into culturally accommodations. Savor authentic, local cuisine. Absorb a destinations true culture with more built-in free time.",
+    "img": "https://i.ibb.co/b2rnxTS/small-group.png"
+  },
+  {
+    "id": 2,
+    "name": "Private Adventures",
+    "price": "1000",
+    "description": "If you are an independent traveller and prefer not to be with a group and would like to avoid the trouble of not only researching and planning your trip but also making the necessary reservations, why not let Goway be of assistance.",
+    "img": "https://i.ibb.co/s9sbPDp/ind-tour.png"
+  },
+  {
+    "id": 3,
+    "name": "VALUE VACATION",
+    "price": "4500",
+    "description": "Are you on the hunt for cheap vacations? Perhaps you're looking for a luxury honeymoon at an all-inclusive resort. Maybe you are scouting for a last-minute family vacation package with a hotel thats suitable for children of any age.",
+    "img": "https://i.ibb.co/VVSz2Y2/vacation.png"
+  }
+]
