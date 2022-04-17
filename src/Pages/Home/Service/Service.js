@@ -1,9 +1,14 @@
 import React from "react";
 import { Button } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 import "./Service.css";
 
 const Service = ({ service }) => {
-  const { name, img, description, price } = service;
+  const { name, img, description, price, id } = service;
+  const navigate = useNavigate();
+  const navigateToCheckout = (id) => {
+    navigate(`/service/${id}`);
+  };
   return (
     <div className="container">
       <div className="service ">
@@ -21,7 +26,9 @@ const Service = ({ service }) => {
         <p>
           <small className="px-5">{description}</small>
         </p>
-        <Button variant="primary">Book Now</Button>
+        <Button onClick={() => navigateToCheckout(id)} variant="primary">
+          Book Now
+        </Button>
       </div>
     </div>
   );
