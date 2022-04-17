@@ -6,7 +6,7 @@ import auth from "../../../firebase.init";
 
 const Signup = () => {
   const [createUserWithEmailAndPassword, user, loading, error] =
-    useCreateUserWithEmailAndPassword(auth);
+    useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
 
   const emailRef = useRef("");
   const passwordRef = useRef("");

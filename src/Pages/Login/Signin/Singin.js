@@ -1,13 +1,18 @@
 import React, { useRef } from "react";
 import { Button, Form } from "react-bootstrap";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
+import {
+  useSendPasswordResetEmail,
+  useSignInWithEmailAndPassword,
+} from "react-firebase-hooks/auth";
 import auth from "../../../firebase.init";
 import GoogleSignin from "../GoogleSignin/GoogleSignin";
+import { async } from "@firebase/util";
 
 const Singin = () => {
   const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
+  const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
 
   const emailRef = useRef("");
   const passwordRef = useRef("");
@@ -21,6 +26,12 @@ const Singin = () => {
     const password = passwordRef.current.value;
     console.log(email, password);
     signInWithEmailAndPassword(email, password);
+  };
+
+  const resetPassword = async () => {
+    const email = emailRef.current.value;
+    await sendPasswordResetEmail(email);
+    alert("Sent email");
   };
 
   const navigateToSignup = (e) => {
@@ -60,7 +71,19 @@ const Singin = () => {
           Sign In
         </Button>
       </Form>
+      <p className="mt-2">
+        Forgot password?{"  "}
+        <Link
+          to="/signin"
+          className="text-primary text-decoration-none pe-auto"
+          onClick={resetPassword}
+        >
+          Reset Password
+        </Link>
+      </p>
+
       <GoogleSignin></GoogleSignin>
+
       <p className="mt-2">
         New User?{"  "}
         <Link
