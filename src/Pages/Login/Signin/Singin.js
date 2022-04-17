@@ -7,7 +7,8 @@ import {
 } from "react-firebase-hooks/auth";
 import auth from "../../../firebase.init";
 import GoogleSignin from "../GoogleSignin/GoogleSignin";
-import { async } from "@firebase/util";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Singin = () => {
   const [signInWithEmailAndPassword, user, loading, error] =
@@ -31,7 +32,7 @@ const Singin = () => {
   const resetPassword = async () => {
     const email = emailRef.current.value;
     await sendPasswordResetEmail(email);
-    alert("Sent email");
+    toast("Sent email");
   };
 
   const navigateToSignup = (e) => {
@@ -94,6 +95,7 @@ const Singin = () => {
           Please Sign Up
         </Link>
       </p>
+      <ToastContainer />
     </div>
   );
 };
