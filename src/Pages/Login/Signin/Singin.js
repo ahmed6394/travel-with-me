@@ -3,6 +3,7 @@ import { Button, Form } from "react-bootstrap";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 import auth from "../../../firebase.init";
+import GoogleSignin from "../GoogleSignin/GoogleSignin";
 
 const Singin = () => {
   const [signInWithEmailAndPassword, user, loading, error] =
@@ -51,10 +52,15 @@ const Singin = () => {
           />
         </Form.Group>
 
-        <Button className="align-items-cente" variant="primary" type="submit">
-          SignIn
+        <Button
+          className="btn w-50 d-block mx-auto my-2"
+          variant="primary"
+          type="submit"
+        >
+          Sign In
         </Button>
       </Form>
+      <GoogleSignin></GoogleSignin>
       <p className="mt-2">
         New User?{"  "}
         <Link

@@ -51,7 +51,11 @@ const Signup = () => {
             required
           />
         </Form.Group>
-        <Button variant="primary" type="submit">
+        <Button
+          className="btn w-50 d-block mx-auto my-2"
+          variant="primary"
+          type="submit"
+        >
           Submit
         </Button>
       </Form>
