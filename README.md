@@ -16,7 +16,7 @@ Here, I develope a simple travel guid website. Use html, css, javascript, and re
 
 ## Site link
 
-- **[1](https://play.google.com/store/apps/details?id=com.learnprogramming.codecamp "Live Site")**
+- **[1](https://play.google.com/store/apps/details?id=com.learnprogramming.codecamp "Live Site") - Live Site Link**
 - **[2](https://play.google.com/store/apps/details?id=com.learnprogramming.codecamp "Code Link")**
 
 ## List Library and Frameworks use in this project
@@ -24,3 +24,5 @@ Here, I develope a simple travel guid website. Use html, css, javascript, and re
 - **React Router**
 - **React Bootstrap**
 - **Firebase Auth**
+
+* **[4.5](https://play.google.com/store/apps/details?id=com.learnprogramming.codecamp "Binary to decimal")** - **[Binary to decimal](premium)**
