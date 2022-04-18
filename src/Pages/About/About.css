@@ -1,0 +1,28 @@
+h1 {
+  color: #398f51;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+h2 {
+  color: #777;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 400px;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+}
+p {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
