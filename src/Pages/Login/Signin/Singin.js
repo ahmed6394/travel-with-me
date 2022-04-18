@@ -38,6 +38,13 @@ const Singin = () => {
   const navigateToSignup = (e) => {
     navigate("/signup");
   };
+  let errorElement;
+  if (error) {
+    errorElement = (
+      <p className="text-danger">Error: {"Incorrect email or password"}</p>
+    );
+  }
+
   if (user) {
     navigate(from, { replace: true });
   }
@@ -72,6 +79,7 @@ const Singin = () => {
           Sign In
         </Button>
       </Form>
+      {errorElement}
       <p className="mt-2">
         Forgot password?{"  "}
         <Link
