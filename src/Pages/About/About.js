@@ -5,14 +5,14 @@ import img from "../../images/photo.jpg";
 const About = () => {
   return (
     <div className="container">
-      <h1>G M MAHABUB AHMED</h1>
-      <h2>Frontend Developer</h2>
+      <h1 className="heading">G M MAHABUB AHMED</h1>
+      <h2 className="sub-heading">Frontend Developer</h2>
       <div>
-        <img src={img} alt="" />
+        <img className="my-img" src={img} alt="" />
       </div>
       <div>
-        <h2>My Goal</h2>
-        <p>
+        <h2 className="sub-heading">My Goal</h2>
+        <p className="paragraph">
           Hi! I am Mahabub Ahmed. Working with HTML5, CSS3, JS, React JS. My
           goal is to be a successful frontend developer. Right now I am in
           Germany and I am planning to grab the opportunity to develop my skills
@@ -20,8 +20,8 @@ const About = () => {
         </p>
       </div>
       <div>
-        <h2>My Progress</h2>
-        <p>
+        <h2 className="sub-heading">My Progress</h2>
+        <p className="paragraph">
           To be a capable developer I am working day and night. I believe in
           skill, so trying to grab all the opportunities to develop my skills.
           Now I am almost completing the resourceful web developing course by a

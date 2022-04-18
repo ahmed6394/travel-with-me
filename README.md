@@ -16,8 +16,8 @@ Here, I develope a simple travel guid website. Use html, css, javascript, and re
 
 ## Site link
 
-- **[1](https://play.google.com/store/apps/details?id=com.learnprogramming.codecamp "Live Site") - Live Site Link**
-- **[2](https://play.google.com/store/apps/details?id=com.learnprogramming.codecamp "Code Link") - Code link**
+-Live Site Link: https://github.com/programming-hero-web-course-4/independent-service-provider-ahmed6394
+-Code Link : https://travel-with-me-8daa1.web.app/
 
 ## List Library and Frameworks use in this project
 
